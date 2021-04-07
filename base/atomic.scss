@@ -1,0 +1,972 @@
+@import '../var/index';
+
+// --------------------- 可见 ---------------------
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+// --------------------- 布局 ---------------------
+.float-right {
+  float: right !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.center-block {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.psr {
+  position: relative !important;
+}
+
+.psa {
+  position: absolute !important;
+}
+
+// 微调位置
+.move-t1 {
+  position: relative;
+  top: -1px !important;
+}
+
+.move-t2 {
+  position: relative;
+  top: -2px !important;
+}
+
+.move-t3 {
+  position: relative;
+  top: -3px !important;
+}
+
+.move-b1 {
+  position: relative;
+  bottom: -1px !important;
+}
+
+.move-b2 {
+  position: relative;
+  bottom: -2px !important;
+}
+
+.move-b3 {
+  position: relative;
+  bottom: -3px !important;
+}
+
+// --------------------- 颜色 ---------------------
+.color-red {
+  color: $red-6 !important;
+}
+
+.color-orange {
+  color: $orange-6 !important;
+}
+
+.color-yellow {
+  color: $yellow-6 !important;
+}
+
+.color-green {
+  color: $green-6 !important;
+}
+
+.color-cyan {
+  color: $cyan-6 !important;
+}
+
+.color-blue {
+  color: $blue-6 !important;
+}
+
+.color-purple {
+  color: $purple-6 !important;
+}
+
+.bg-red {
+  background-color: $red-6 !important;
+}
+
+.bg-orange {
+  background-color: $orange-6 !important;
+}
+
+.bg-yellow {
+  background-color: $yellow-6 !important;
+}
+
+.bg-green {
+  background-color: $green-6 !important;
+}
+
+.bg-cyan {
+  background-color: $cyan-6 !important;
+}
+
+.bg-blue {
+  background-color: $blue-6 !important;
+}
+
+.bg-purple {
+  background-color: $purple-6 !important;
+}
+
+
+// --------------------- 尺寸 --------------------- //
+
+.h-1em {
+  height: 1em !important;
+}
+
+.h-0d8em {
+  height: 0.8em !important;
+}
+
+.h-1d2em {
+  height: 1.2em !important;
+}
+
+.h-1d4em {
+  height: 1.4em !important;
+}
+
+.w-fifth {
+  width: 20% !important;
+}
+
+.w-fourth {
+  width: 25% !important;
+}
+
+.w-third {
+  width: 33.3333% !important;
+}
+
+.w-half {
+  width: 50% !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-1em {
+  width: 1em !important;
+}
+
+.w-0d8em {
+  width: 0.8em !important;
+}
+
+.w-1d2em {
+  width: 1.2em !important;
+}
+
+.w-1d4em {
+  width: 1.4em !important;
+}
+
+// --------------------- 文字 --------------------- //
+// 性质
+.ellipsis {
+  @include ellipsis-x;
+}
+
+.ellipsis-2 {
+  @include ellipsis-x(2);
+}
+
+.fw {
+  font-weight: $fw !important;
+}
+
+.fw-md {
+  font-weight: $fw-md !important;
+}
+
+.fw-lg {
+  font-weight: $fw-lg !important;
+}
+
+.lh-0 {
+  line-height: 0 !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-base {
+  line-height: $line-height-base !important;
+}
+
+.lh-2 {
+  line-height: 2 !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.tl {
+  text-align: left !important;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.tr {
+  text-align: right !important;
+}
+
+.vm {
+  vertical-align: middle !important;
+}
+
+.vt {
+  vertical-align: top !important;
+}
+
+// 颜色
+.color-title {
+  color: $b-title !important;
+  color: var(--m78-color-title) !important;
+}
+
+.color-primary {
+  color: $b-primary !important;
+  color: var(--m78-color-primary) !important;
+}
+
+.color-second {
+  color: $b-second !important;
+  color: var(--m78-color-second) !important;
+}
+
+.color-disabled {
+  color: $b-disable;
+  color: var(--m78-color-disable) !important;
+}
+
+.color-primary {
+  color: $color-6 !important;
+  color: var(--m78-color-6) !important;
+}
+
+.color-primary-l {
+  color: $color-4 !important;
+  color: var(--m78-color-4) !important;
+}
+
+.color-primary-d {
+  color: $color-8 !important;
+  color: var(--m78-color-8) !important;
+}
+
+.color-sub {
+  color: $color-sub-6 !important;
+  color: var(--m78-color-sub-6) !important;
+}
+
+.color-sub-l {
+  color: $color-sub-4 !important;
+  color: var(--m78-color-sub-4) !important;
+}
+
+.color-sub-d {
+  color: $color-sub-8 !important;
+  color: var(--m78-color-sub-8) !important;
+}
+
+.color-info {
+  color: $color-info !important;
+}
+
+.bg-info {
+  background-color: $color-info !important;
+}
+.color-success {
+  color: $color-success !important;
+}
+
+.bg-success {
+  background-color: $color-success !important;
+}
+
+.color-warn {
+  color: $color-warn !important;
+}
+
+.bg-warn {
+  background-color: $color-warn !important;
+}
+
+.color-error {
+  color: $color-error !important;
+}
+
+.bg-error {
+  background-color: $color-error !important;
+}
+
+.w-title {
+  color: $w-title !important;
+}
+
+.w-primary {
+  color: $w-primary !important;
+}
+
+.w-second {
+  color: $w-second !important;
+}
+
+.w-disabled {
+  color: $w-disable;
+}
+
+.w-border {
+  color: $w-border;
+}
+
+.w-divider {
+  color: $w-divider
+}
+
+// 文字大小
+.fs-1 {
+  font-size: $fs-1 !important;
+}
+
+.fs-2 {
+  font-size: $fs-2 !important;
+}
+
+.fs-3 {
+  font-size: $fs-3 !important;
+}
+
+.fs-4 {
+  font-size: $fs-4 !important;
+}
+
+.fs-5 {
+  font-size: $fs-5 !important;
+}
+
+.fs-6 {
+  font-size: $fs-6 !important;
+}
+
+.fs-7 {
+  font-size: $fs-7 !important;
+}
+
+.fs-8 {
+  font-size: $fs-8 !important;
+}
+
+.fs-9 {
+  font-size: $fs-9 !important;
+}
+
+.fs-10 {
+  font-size: $fs-10 !important;
+}
+
+.fs-sm {
+  font-size: $font-size-sm !important;
+}
+
+.fs {
+  font-size: $font-size !important;
+}
+
+.fs-md {
+  font-size: $font-size-md !important;
+}
+
+.fs-lg {
+  font-size: $font-size-lg !important;
+}
+
+// 内外边距类 //
+.m-4 {
+  margin: 4px !important;
+}
+
+.mt-4 {
+  margin-top: 4px !important;
+}
+
+.mr-4 {
+  margin-right: 4px !important;
+}
+
+.ml-4 {
+  margin-left: 4px !important;
+}
+
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+
+.mtb-4 {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.mlr-4 {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+.m-8 {
+  margin: 8px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mr-8 {
+  margin-right: 8px !important;
+}
+
+.ml-8 {
+  margin-left: 8px !important;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mtb-8 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.mlr-8 {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+.m-12 {
+  margin: 12px !important;
+}
+
+.mt-12 {
+  margin-top: 12px !important;
+}
+
+.mr-12 {
+  margin-right: 12px !important;
+}
+
+.ml-12 {
+  margin-left: 12px !important;
+}
+
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+
+.mtb-12 {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.mlr-12 {
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+}
+
+// -
+.m-16 {
+  margin: 16px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.mr-16 {
+  margin-right: 16px !important;
+}
+
+.ml-16 {
+  margin-left: 16px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.mtb-16 {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.mlr-16 {
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+
+// -
+.m-24 {
+  margin: 24px !important;
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+}
+
+.mr-24 {
+  margin-right: 24px !important;
+}
+
+.ml-24 {
+  margin-left: 24px !important;
+}
+
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+
+.mtb-24 {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.mlr-24 {
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+}
+
+// -
+.m-32 {
+  margin: 32px !important;
+}
+
+.mt-32 {
+  margin-top: 32px !important;
+}
+
+.mr-32 {
+  margin-right: 32px !important;
+}
+
+.ml-32 {
+  margin-left: 32px !important;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.mtb-32 {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+.mlr-32 {
+  margin-left: 32px !important;
+  margin-right: 32px !important;
+}
+
+.p-8 {
+  padding: 8px !important;
+}
+
+.pt-8 {
+  padding-top: 8px !important;
+}
+
+.pr-8 {
+  padding-right: 8px !important;
+}
+
+.pl-8 {
+  padding-left: 8px !important;
+}
+
+.pb-8 {
+  padding-bottom: 8px !important;
+}
+
+.ptb-8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.plr-8 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.p-12 {
+  padding: 12px !important;
+}
+
+.pt-12 {
+  padding-top: 12px !important;
+}
+
+.pr-12 {
+  padding-right: 12px !important;
+}
+
+.pl-12 {
+  padding-left: 12px !important;
+}
+
+.pb-12 {
+  padding-bottom: 12px !important;
+}
+
+.ptb-12 {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.plr-12 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.p-16 {
+  padding: 16px !important;
+}
+
+.p-16 {
+  padding-top: 16px !important;
+}
+
+.pr-16 {
+  padding-right: 16px !important;
+}
+
+.pl-16 {
+  padding-left: 16px !important;
+}
+
+.pb-16 {
+  padding-bottom: 16px !important;
+}
+
+.pb-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.p-16 {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.p-24 {
+  padding: 24px !important;
+}
+
+.p-24 {
+  padding-top: 24px !important;
+}
+
+.p-24 {
+  padding-right: 24px !important;
+}
+
+.p-24 {
+  padding-left: 24px !important;
+}
+
+.pb-24 {
+  padding-bottom: 24px !important;
+}
+
+.ptb-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.plr-24 {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.p-32 {
+  padding: 32px !important;
+}
+
+.pt-32 {
+  padding-top: 32px !important;
+}
+
+.pr-32 {
+  padding-right: 32px !important;
+}
+
+.pl-32 {
+  padding-left: 32px !important;
+}
+
+.pb-32 {
+  padding-bottom: 32px !important;
+}
+
+.ptb-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.plr-32 {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+.divide-8 {
+  height: 8px;
+}
+
+.divide-16 {
+  height: 16px;
+}
+
+.divide-24 {
+  height: 24px;
+}
+
+.divide-32 {
+  height: 32px;
+}
+
+.divide-40 {
+  height: 40px;
+}
+
+.divide-48 {
+  height: 48px;
+}
+
+// -------------------- 装饰 -------------------- //
+.radius {
+  border-radius: $border-radius;
+}
+
+// 阴影
+.shadow-0 {
+  box-shadow: none !important;
+}
+
+.shadow-1 {
+  box-shadow: $shadow-1;
+}
+
+.shadow-2 {
+  box-shadow: $shadow-2;
+}
+
+.shadow-3 {
+  box-shadow: $shadow-3;
+}
+
+// -------------------- 小型组件 -------------------- //
+
+.m78-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: $b-disable;
+  background-color: var(--m78-color-disable);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 4px;
+  @include status-bg;
+}
+
+
+.m78-triangle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid $b-second;
+  border-left: 5px solid var(--m78-color-second);
+  border-radius: 2px;
+}
+
+
+// --------------------- 动画 --------------------- //
+.#{$prefix}-animated-spin {
+  transform-origin: center center;
+  animation: #{$prefix}-spin 2s infinite linear;
+}
+
+.#{$prefix}-animated-steps {
+  animation: #{$prefix}-spin 1s infinite steps(8);
+}
+
+@keyframes #{$prefix}-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// --------------------- 遮罩 --------------------- //
+.m78-mask {
+  position: fixed;
+  background-color: $w-mask;
+  background-color: var(--m78-mask);
+  z-index: $z-index;
+  @include full;
+}
+
+.m78-mask-b {
+  position: fixed;
+  background-color: $b-mask;
+  z-index: $z-index;
+  @include full;
+}
+
+// --------------------- 图片 --------------------- //
+// 圆形图片
+.circle-img {
+  border-radius: 50%;
+  border: 1px solid $b-border;
+  border: 1px solid var(--m78-color-border);
+  overflow: hidden;
+}
+
+// --------------------- 边框 --------------------- //
+.border {
+  border: 1px solid $b-border;
+  border: 1px solid var(--m78-color-border);
+}
+
+// 1px 线 //
+.m78-hb-t {
+  &:before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $b-border;
+    background-color: 1px solid var(--m78-color-border);
+    transform: scaleY(0.5);
+  }
+}
+
+.m78-hb-b {
+  &:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $b-border;
+    background-color: 1px solid var(--m78-color-border);
+    transform: scaleY(0.5);
+  }
+}
+
+// --------------------- 交互 ---------------------
+
+.no-select {
+  user-select: none;
+}
+
+// 扩大交互区
+.expand {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -30%;
+    top: -30%;
+    right: -30%;
+    bottom: -30%;
+  }
+}
+
+.effect-shadow {
+  @include effect-shadow;
+}
+
+.effect-bg {
+  @include effect-bg;
+}
+
+.effect-border {
+  @include effect-border;
+}
+
+.effect-opacity {
+  @include effect-opacity;
+}
+
+.effect-scale {
+  @include effect-scale;
+}
+
+.effect-font-color {
+  @include effect-font-color;
+}
+
+.cus-p {
+  cursor: pointer;
+}
+
+.cus-na {
+  cursor: not-allowed;
+}
+
+// --------------------- 其他 ---------------------
+// 防止文字与背景同色
+.m78-stress {
+  text-shadow: $stress-shadow-b;
+}
+
+@supports (mix-blend-mode: difference) {
+  .m78-stress {
+    mix-blend-mode: difference;
+    text-shadow: none;
+  }
+}

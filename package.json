@@ -1,0 +1,32 @@
+{
+  "name": "@m78/style",
+  "version": "1.0.0",
+  "description": "一个样式库，包含normalize、grid、以及常用的sass混合、原子类等，旨在简化css的书写",
+  "main": "./main.scss",
+  "authors": {
+    "name": "lixianjie",
+    "email": "1073830130@qq.com"
+  },
+  "scripts": {
+    "example": "parcel example.html",
+    "build": "sass ./main.scss ./dist/index.css",
+    "publish": "npm publish --access public",
+    "gcolors-var": "node ./script/generateColors.js"
+  },
+  "repository": "",
+  "devDependencies": {
+    "inquirer": "^7.1.0",
+    "sass": "^1.24.4"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^3.2.2"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "base",
+    "script",
+    "var",
+    "main.scss"
+  ]
+}
