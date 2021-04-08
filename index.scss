@@ -1,13 +1,13 @@
 // ########## 主要模块
-@import "./base/css-var";
+@import "var";
 
-@import "./base/normalize";
+@import "normalize";
 
-@import "./base/atomic";
+@import "atomic";
 
-@import "./base/layout";
+@import "layout";
 
-@import "./base/components";
+@import "components";
 
 // ########## 根据需要引入 ########## */
 

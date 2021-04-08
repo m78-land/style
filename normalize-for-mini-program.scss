@@ -1,0 +1,16 @@
+@import './sass-vars';
+
+*,
+*::before,
+*::after,
+text,
+view {
+  box-sizing: border-box;
+}
+
+:host, page {
+  color: var(--m78-color-primary);
+  font-family: var(--m78-font-family);
+  line-height: var(--m78-line-height);
+  background-color: var(--m78-body-bg);
+}

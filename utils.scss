@@ -1,4 +1,4 @@
-@import 'var';
+@import './config';
 
 @mixin full{
   left: 0;
@@ -8,9 +8,9 @@
 }
 
 // 占位文本颜色
-@mixin placeholder($color: $b-second) {
+@mixin placeholder() {
   &::placeholder {
-    color: $color;
+    color: var(--m78-color-second);
   }
 }
 
@@ -61,19 +61,19 @@
 @mixin status-bg {
 
   &.__red {
-    background-color: $color-error;
+    background-color: var(--m78-color-error);
   }
 
   &.__blue {
-    background-color: $color-info;
+    background-color: var(--m78-color-success);
   }
 
   &.__yellow {
-    background-color: $color-warn;
+    background-color: var(--m78-color-warn);
   }
 
   &.__green {
-    background-color: $color-success;
+    background-color: var(--m78-color-success);
   }
 }
 
@@ -81,109 +81,107 @@
 @mixin status-bg {
 
   &.__red {
-    border-color: $color-error;
+    border-color: var(--m78-color-error);
   }
 
   &.__blue {
-    border-color: $color-info;
+    border-color: var(--m78-color-info);
   }
 
   &.__yellow {
-    border-color: $color-warn;
+    border-color: var(--m78-color-warn);
   }
 
   &.__green {
-    border-color: $color-success;
+    border-color: var(--m78-color-success);
   }
 }
 
 // effect */
 @mixin effect-shadow {
   cursor: pointer;
-  box-shadow: $shadow-1;
-  transition: box-shadow $animation-duration-base;
+  box-shadow: var(--m78-shadow-1);
+  transition: box-shadow var(--m78-animate-base);
 
   &:hover {
-    box-shadow: $shadow-2;
+    box-shadow: var(--m78-shadow-2);
   }
 
   &:active {
-    transition: box-shadow $animation-duration-base 0.1s;
-    box-shadow: $shadow-1-focus;
+    transition: box-shadow var(--m78-animate-base) 0.1s;
+    box-shadow: var(--m78-shadow-1-focus);
   }
 }
 
 @mixin effect-bg() {
   cursor: pointer;
-  transition: background-color $animation-duration-base;
+  transition: background-color var(--m78-animate-base);
 
   &:hover {
-    background-color: $b-divider;
     background-color: var(--m78-color-divider);
   }
 
   &:active {
-    transition: background-color $animation-duration-base 0.1s;
-    background-color: $b-border;
+    transition: background-color var(--m78-animate-base) 0.1s;
     background-color: var(--m78-color-border);
   }
 }
 
-@mixin effect-border($c: $color) {
+@mixin effect-border() {
   cursor: pointer;
-  transition: border $animation-duration-base;
+  transition: border var(--m78-animate-base);
   border: 1px solid transparent;
 
   &:hover {
-    border: 1px solid $c;
+    border: 1px solid var(--m78-color-border);
   }
 
   &:active {
-    transition: border $animation-duration-base 0.1s;
-    border: 1px solid scale-color($c, $lightness: -30%);
+    transition: border var(--m78-animate-base) 0.1s;
+    border: 1px solid var(--m78-color-disable);
   }
 }
 
 @mixin effect-opacity() {
   cursor: pointer;
-  transition: opacity $animation-duration-base;
+  transition: opacity var(--m78-animate-base);
 
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
-    transition: opacity $animation-duration-base 0.1s;
+    transition: opacity var(--m78-animate-base) 0.1s;
     opacity: 0.7;
   }
 }
 
 @mixin effect-scale() {
   cursor: pointer;
-  transition: transform $animation-duration-base;
+  transition: transform var(--m78-animate-base);
 
   &:hover {
     transform: scale3d(1.1, 1.1, 1.1);
   }
 
   &:active {
-    transition: transform $animation-duration-base 0.1s;
+    transition: transform var(--m78-animate-base) 0.1s;
     transform: scale3d(1.05, 1.05, 1.05);
   }
 }
 
-@mixin effect-font-color($c: $color) {
+@mixin effect-font-color() {
   cursor: pointer;
-  color: $c;
-  transition: transform $animation-duration-base;
+  color: var(--m78-color);
+  transition: transform var(--m78-animate-base);
 
 
   &:hover {
-    color: scale-color($c, $lightness: -20%);
+    color: var(--m78-color-4);
   }
 
   &:active {
-    transition: transform $animation-duration-base 0.1s;
-    color: scale-color($c, $lightness: -40%);
+    transition: transform var(--m78-animate-base) 0.1s;
+    color: var(--m78-color-8);
   }
 }

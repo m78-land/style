@@ -1,0 +1,145 @@
+@import './colors';
+// 避免不支持css变量时造成整站页面样式大面积瘫痪，css变量仅用于控制影响主题色的变量
+// 同名sass变量依然可用，但只用于不支持css变量的浏览器
+
+// 变量使用可采用如下规则:
+// 使用 https://github.com/postcss/postcss-custom-properties 插件来生成回退代码
+
+:root {
+  // 窗体/大型区块 背景色
+  --m78-body-bg: #{$grey-3};
+
+  // 组件背景色
+  --m78-component-bg: #{$grey-1};
+
+  //主题色
+  --m78-color-1: #{$cyan-1};
+  --m78-color-2: #{$cyan-2};
+  --m78-color-3: #{$cyan-3};
+  --m78-color-4: #{$cyan-4};
+  --m78-color-5: #{$cyan-5};
+  --m78-color-6: #{$cyan-6};
+  --m78-color-7: #{$cyan-7};
+  --m78-color-8: #{$cyan-8};
+  --m78-color-9: #{$cyan-9};
+  --m78-color-10: #{$cyan-10};
+  --m78-color: var(--m78-color-6);
+
+  // 次要主题色
+  --m78-color-sub-1: #{$red-1};
+  --m78-color-sub-2: #{$red-2};
+  --m78-color-sub-3: #{$red-3};
+  --m78-color-sub-4: #{$red-4};
+  --m78-color-sub-5: #{$red-5};
+  --m78-color-sub-6: #{$red-6};
+  --m78-color-sub-7: #{$red-7};
+  --m78-color-sub-8: #{$red-8};
+  --m78-color-sub-9: #{$red-9};
+  --m78-color-sub-10: #{$red-10};
+  --m78-color-sub: var(--m78-color-sub-6);
+
+  // 灰色系
+  --m78-color-title: rgba(0, 0, 0, 0.9); // Title
+  --m78-color-primary: rgba(0, 0, 0, 0.75); // 主要文本色
+  --m78-color-second: rgba(0, 0, 0, 0.45); // 次要文本色
+  --m78-color-disable: rgba(0, 0, 0, 0.25); // 禁用
+  --m78-color-border: rgba(0, 0, 0, 0.15); // 边框
+  --m78-color-divider: rgba(0, 0, 0, 0.06); // 分割线
+
+  // 功能色
+  --m78-color-info: #{$blue-5};
+  --m78-color-success: #{$green-5};
+  --m78-color-error: #{$red-5};
+  --m78-color-warn: #{$orange-5};
+
+  // 文字
+  --m78-fs-sm: 12px;
+  --m78-fs: 14px;
+  --m78-fs-md: 16px;
+  --m78-fs-lg: 24px;
+
+  --m78-fw: 400;
+  --m78-fw-md: 500;
+  --m78-fw-bold: bold;
+
+  --m78-line-height: 1.6;
+
+  --m78-font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji', sans-serif;
+  --m78-code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+  // 遮罩
+  --m78-mask: rgba(255, 255, 255, 0.75);
+
+  // 阴影
+  --m78-shadow-1: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  --m78-shadow-1-focus: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
+  --m78-shadow-2: rgba(0, 0, 0, 0.2) 0px 4px 24px 0px;
+  --m78-shadow-2-focus: rgba(0, 0, 0, 0.3) 0px 4px 24px 0px;
+  --m78-shadow-3: rgba(0, 0, 0, 0.24) 0px 12px 30px 0px;
+  --m78-shadow-3-focus: rgba(0, 0, 0, 0.3) 0px 12px 30px 0px ;
+  --m78-stress-shadow-w: -1px -1px 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff;
+  --m78-stress-shadow-b: -1px -1px 2px #666, 1px 1px 2px #666, 1px -1px 2px #666, -1px 1px 2px #666;
+
+  // 性质
+  --m78-opacity: 0.45;
+
+  --m78-border-radius-sm: 2px;
+  --m78-border-radius: 4px;
+  --m78-border-radius-md: 8px;
+  --m78-border-radius-lg: 16px;
+
+  --m78-xs: 0px; //	<576
+  --m78-sm: 576px; //	≥576
+  --m78-md: 768px; //	≥768
+  --m78-lg: 992px; //	≥992
+  --m78-xl: 1200px; //	≥1200
+  --m78-xxl: 1600px; //	≥1600
+
+  // 层级
+  --m78-z-index-base: 10;
+  --m78-z-index: 1000;    //高于基础层
+  --m78-z-index-drawer: 1400;
+  --m78-z-index-modal: 1800;
+  --m78-z-index-message: 2200;
+
+  // 间距
+  --m78-space-1: 4px;
+  --m78-space-2: 8px;
+  --m78-space-3: 12px;
+  --m78-space-4: 16px;
+  --m78-space-5: 20px;
+  --m78-space-6: 24px;
+  --m78-space-7: 28px;
+  --m78-space-8: 32px;
+  --m78-space-9: 36px;
+  --m78-space-10: 40px;
+
+  // 动画
+  --m78-animate-slow: 0.3s;
+  --m78-animate-base: 0.2s;
+  --m78-animate-fast: 0.1s;
+}
+
+//
+//  切换内置样式的主题色, 需要搭配css-var.scss模块使用
+//  当使用react等的state库管理主题时，可以同时在html上设置data-theme-dark使其生效
+//
+
+:root[data-theme=dark] {
+  --m78-body-bg: #{$grey-11};
+  --m78-component-bg: #{$grey-12};
+  --m78-color-title: rgba(255, 255, 255, 0.95);
+  --m78-color-primary: rgba(255, 255, 255, 0.8);
+  --m78-color-second: rgba(255, 255, 255, 0.45);
+  --m78-color-disable: rgba(255, 255, 255, 0.30);
+  --m78-color-border: rgba(255, 255, 255, 0.20);
+  --m78-color-divider: rgba(255, 255, 255, 0.12);
+  --m78-mask: rgba(0, 0, 0, 0.75);
+  --m78-shadow-1: rgba(255, 255, 255, 0.4) 0px 2px 8px 0px;
+  --m78-shadow-1-focus: rgba(255, 255, 255, 0.5) 0px 2px 8px 0px;
+  --m78-shadow-2: rgba(255, 255, 255, 0.4) 0px 4px 24px 0px;
+  --m78-shadow-2-focus: rgba(255, 255, 255, 0.5) 0px 4px 24px 0px;
+  --m78-shadow-3: rgba(255, 255, 255, 0.4) 0px 12px 30px 0px;
+  --m78-shadow-3-focus: rgba(255, 255, 255, 0.5) 0px 12px 30px 0px;
+}

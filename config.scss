@@ -1,0 +1,17 @@
+// 项目类前缀
+$prefix: m78 !default;
+
+// 网格列数
+$grid-num: 24 !default;
+
+// 设计图宽度
+$design-width: 750 !default;
+$dpr: 2 !default;
+
+// -------------------- 断点 ---------------------
+$xs: 0px !default; //	<576
+$sm: 576px !default; //	≥576
+$md: 768px !default; //	≥768
+$lg: 992px !default; //	≥992
+$xl: 1200px !default; //	≥1200
+$xxl: 1600px !default; //	≥1600

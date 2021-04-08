@@ -1,4 +1,4 @@
-@import '../var/index';
+@import './sass-vars';
 
 // Reboot
 //
@@ -62,15 +62,13 @@ section {
 
 body {
   margin: 0; // 1
-  color: $b-primary;
   color: var(--m78-color-primary);
-  font-size: $font-size;
-  font-family: $font-family;
-  font-variant: $font-variant-base;
-  line-height: $line-height-base;
-  background-color: $body-bg; // 2
+  font-size: var(--m78-fs);
+  font-family: var(--m78-font-family);
+  font-variant: tabular-nums;
+  line-height: var(--m78-line-height);
   background-color: var(--m78-body-bg);
-  font-feature-settings: $font-feature-settings-base;
+  font-feature-settings: 'tnum';
   -webkit-text-size-adjust: 100%; // 4
   -ms-text-size-adjust: 100%; // 4
   -ms-overflow-style: scrollbar; // 5
@@ -113,7 +111,6 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: $b-title;
   color: var(--m78-color-title);
   font-weight: 500;
 }
@@ -221,7 +218,6 @@ sup {
 //
 
 a {
-  color: $color;
   color: var(--m78-color);
   text-decoration: none;
   background-color: transparent; // remove the gray background on active links in IE 10.
@@ -231,12 +227,10 @@ a {
   outline-offset: -1px;
 
   &:hover {
-    color: $color-5;
     color: var(--m78-color-5);
   }
 
   &:active {
-    color: $color-7;
     color: var(--m78-color-7);
   }
 
@@ -247,12 +241,11 @@ a {
   }
 
   &:focus {
-    outline: $color auto 1px;
+    outline: var(--m78-color) auto 1px;
   }
 
   &[disabled] {
-    color: $b-disable;
-    color: var(--m78-color-title);
+    color: var(--m78-color-disable);
     cursor: not-allowed;
     pointer-events: none;
   }
@@ -263,7 +256,7 @@ a {
 }
 
 .outline:focus, [tabindex]:focus {
-  outline: $color auto 1px;
+  outline: var(--m78-color) auto 1px;
 }
 
 //
@@ -275,7 +268,7 @@ code,
 kbd,
 samp {
   font-size: 1em; // Correct the odd `em` font sizing in all browsers.
-  font-family: $code-family;
+  font-family: var(--m78-code-family);
 }
 
 pre {
@@ -341,7 +334,6 @@ table {
 caption {
   padding-top: 0.75em;
   padding-bottom: 0.3em;
-  color: $b-second;
   color: var(--m78-color-second);
   text-align: left;
   caption-side: bottom;
@@ -515,9 +507,7 @@ mark {
 }
 
 ::selection {
-  background: $color;
   background: var(--m78-color);
-  color: $white;
   color: var(--m78-color-title);
 }
 

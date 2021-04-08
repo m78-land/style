@@ -1,4 +1,4 @@
-@import '../var/index';
+@import './sass-vars';
 
 // --------------------- 可见 ---------------------
 .hide {
@@ -206,15 +206,15 @@
 }
 
 .fw {
-  font-weight: $fw !important;
+  font-weight: var(--fw) !important;
 }
 
 .fw-md {
-  font-weight: $fw-md !important;
+  font-weight: var(--m78-fw-md) !important;
 }
 
-.fw-lg {
-  font-weight: $fw-lg !important;
+.bold {
+  font-weight: var(--m78-fw-bold) !important;
 }
 
 .lh-0 {
@@ -226,16 +226,14 @@
 }
 
 .lh-base {
-  line-height: $line-height-base !important;
+  line-height: var(--m78-line-height) !important;
 }
 
 .lh-2 {
   line-height: 2 !important;
 }
 
-.bold {
-  font-weight: bold !important;
-}
+
 
 .tl {
   text-align: left !important;
@@ -259,165 +257,92 @@
 
 // 颜色
 .color-title {
-  color: $b-title !important;
   color: var(--m78-color-title) !important;
 }
 
 .color-primary {
-  color: $b-primary !important;
   color: var(--m78-color-primary) !important;
 }
 
 .color-second {
-  color: $b-second !important;
   color: var(--m78-color-second) !important;
 }
 
 .color-disabled {
-  color: $b-disable;
   color: var(--m78-color-disable) !important;
 }
 
 .color-primary {
-  color: $color-6 !important;
   color: var(--m78-color-6) !important;
 }
 
 .color-primary-l {
-  color: $color-4 !important;
   color: var(--m78-color-4) !important;
 }
 
 .color-primary-d {
-  color: $color-8 !important;
   color: var(--m78-color-8) !important;
 }
 
 .color-sub {
-  color: $color-sub-6 !important;
   color: var(--m78-color-sub-6) !important;
 }
 
 .color-sub-l {
-  color: $color-sub-4 !important;
   color: var(--m78-color-sub-4) !important;
 }
 
 .color-sub-d {
-  color: $color-sub-8 !important;
   color: var(--m78-color-sub-8) !important;
 }
 
 .color-info {
-  color: $color-info !important;
+  color: var(--m78-color-info) !important;
 }
 
 .bg-info {
-  background-color: $color-info !important;
+  background-color: var(--m78-color-info) !important;
 }
 .color-success {
-  color: $color-success !important;
+  color: var(--m78-color-success) !important;
 }
 
 .bg-success {
-  background-color: $color-success !important;
+  background-color: var(--m78-color-success) !important;
 }
 
 .color-warn {
-  color: $color-warn !important;
+  color: var(--m78-color-warn) !important;
 }
 
 .bg-warn {
-  background-color: $color-warn !important;
+  background-color: var(--m78-color-warn) !important;
 }
 
 .color-error {
-  color: $color-error !important;
+  color: var(--m78-color-error) !important;
 }
 
 .bg-error {
-  background-color: $color-error !important;
-}
-
-.w-title {
-  color: $w-title !important;
-}
-
-.w-primary {
-  color: $w-primary !important;
-}
-
-.w-second {
-  color: $w-second !important;
-}
-
-.w-disabled {
-  color: $w-disable;
-}
-
-.w-border {
-  color: $w-border;
-}
-
-.w-divider {
-  color: $w-divider
+  background-color: var(--m78-color-error) !important;
 }
 
 // 文字大小
-.fs-1 {
-  font-size: $fs-1 !important;
-}
-
-.fs-2 {
-  font-size: $fs-2 !important;
-}
-
-.fs-3 {
-  font-size: $fs-3 !important;
-}
-
-.fs-4 {
-  font-size: $fs-4 !important;
-}
-
-.fs-5 {
-  font-size: $fs-5 !important;
-}
-
-.fs-6 {
-  font-size: $fs-6 !important;
-}
-
-.fs-7 {
-  font-size: $fs-7 !important;
-}
-
-.fs-8 {
-  font-size: $fs-8 !important;
-}
-
-.fs-9 {
-  font-size: $fs-9 !important;
-}
-
-.fs-10 {
-  font-size: $fs-10 !important;
-}
 
 .fs-sm {
-  font-size: $font-size-sm !important;
+  font-size: var(--m78-fs-sm) !important;
 }
 
 .fs {
-  font-size: $font-size !important;
+  font-size: var(--m78-fs) !important;
 }
 
 .fs-md {
-  font-size: $font-size-md !important;
+  font-size: var(--m78-fs-sm) !important;
 }
 
 .fs-lg {
-  font-size: $font-size-lg !important;
+  font-size: var(--m78-fs-lg) !important;
 }
 
 // 内外边距类 //
@@ -780,7 +705,7 @@
 
 // -------------------- 装饰 -------------------- //
 .radius {
-  border-radius: $border-radius;
+  border-radius: var(--m78-border-radius);
 }
 
 // 阴影
@@ -789,15 +714,15 @@
 }
 
 .shadow-1 {
-  box-shadow: $shadow-1;
+  box-shadow: var(--m78-shadow-1);
 }
 
 .shadow-2 {
-  box-shadow: $shadow-2;
+  box-shadow: var(--m78-shadow-2);
 }
 
 .shadow-3 {
-  box-shadow: $shadow-3;
+  box-shadow: var(--m78-shadow-3);
 }
 
 // -------------------- 小型组件 -------------------- //
@@ -806,7 +731,6 @@
   display: inline-block;
   width: 5px;
   height: 5px;
-  background-color: $b-disable;
   background-color: var(--m78-color-disable);
   border-radius: 50%;
   vertical-align: middle;
@@ -821,7 +745,6 @@
   width: 0;
   height: 0;
   border: 5px solid transparent;
-  border-left: 5px solid $b-second;
   border-left: 5px solid var(--m78-color-second);
   border-radius: 2px;
 }
@@ -849,16 +772,15 @@
 // --------------------- 遮罩 --------------------- //
 .m78-mask {
   position: fixed;
-  background-color: $w-mask;
   background-color: var(--m78-mask);
-  z-index: $z-index;
+  z-index: var(--m78-z-index);
   @include full;
 }
 
 .m78-mask-b {
   position: fixed;
-  background-color: $b-mask;
-  z-index: $z-index;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: var(--m78-z-index);
   @include full;
 }
 
@@ -866,14 +788,12 @@
 // 圆形图片
 .circle-img {
   border-radius: 50%;
-  border: 1px solid $b-border;
   border: 1px solid var(--m78-color-border);
   overflow: hidden;
 }
 
 // --------------------- 边框 --------------------- //
 .border {
-  border: 1px solid $b-border;
   border: 1px solid var(--m78-color-border);
 }
 
@@ -886,8 +806,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: $b-border;
-    background-color: 1px solid var(--m78-color-border);
+    background-color: var(--m78-color-border);
     transform: scaleY(0.5);
   }
 }
@@ -900,8 +819,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $b-border;
-    background-color: 1px solid var(--m78-color-border);
+    background-color: var(--m78-color-border);
     transform: scaleY(0.5);
   }
 }
@@ -961,7 +879,7 @@
 // --------------------- 其他 ---------------------
 // 防止文字与背景同色
 .m78-stress {
-  text-shadow: $stress-shadow-b;
+  text-shadow: var(--m78-stress-shadow-b);
 }
 
 @supports (mix-blend-mode: difference) {

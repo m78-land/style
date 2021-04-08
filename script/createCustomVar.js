@@ -22,8 +22,8 @@ inquirer
     }
 
     colors.forEach((color, index) => {
-      console.log(`$color-${index + 1}: ${color};`)
+      console.log(`--m78-color-${index + 1}: ${color};`)
     })
 
-    console.log(`$color: ${colors[5]};`)
+    console.log(`--m78-color: ${colors[5]};`)
   });
