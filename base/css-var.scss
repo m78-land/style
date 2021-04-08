@@ -54,7 +54,7 @@
 //  当使用react等的state库管理主题时，可以同时在html上设置data-theme-dark使其生效
 //
 
-:root[data-theme-dark] {
+:root[data-theme=dark] {
   --m78-body-bg: #{$body-bg-b};
   --m78-component-bg: #{$component-bg-b};
   --m78-color-title: #{$w-title};
