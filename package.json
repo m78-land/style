@@ -1,6 +1,6 @@
 {
   "name": "@m78/style",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "一个样式库，包含normalize、grid、以及常用的sass混合、原子类等，旨在简化css的书写",
   "main": "./main.scss",
   "authors": {
@@ -13,9 +13,11 @@
     "publish": "npm publish --access public",
     "gcolors-var": "node ./script/generateColors.js"
   },
-  "repository": "",
+  "repository": "https://github.com/m78-core/style",
   "devDependencies": {
+    "autoprefixer": "9.8.6",
     "inquirer": "^7.1.0",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.24.4"
   },
   "dependencies": {

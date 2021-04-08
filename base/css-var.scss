@@ -6,47 +6,47 @@
 // 1.没有主题动态切换需求的网站
 // 正常使用sass变量
 // 2.有主题切换需求的网站
-// 包含等css变量的sass变量通过css来声明
-// css变量的属性上一行通过sass变量来书写回退属性（根据兼容意愿自行选择是否添加）
+// 包含css变量等价的sass变量通过css变量来声明
+// css变量的属性上一行通过sass变量来书写回退属性（根据兼容意愿自行选择是否添加, 此步可通过https://github.com/postcss/postcss-custom-properties插件完成）
 
 :root {
   // 窗体/大型区块 背景色
-  --m78-body-bg: $body-bg;
+  --m78-body-bg: #{$body-bg};
   // 组件背景色
-  --m78-component-bg: $component-bg;
+  --m78-component-bg: #{$component-bg};
   //主题色
-  --m78-color-1: $color-1;
-  --m78-color-2: $color-2;
-  --m78-color-3: $color-3;
-  --m78-color-4: $color-4;
-  --m78-color-5: $color-5;
-  --m78-color-6: $color-6;
-  --m78-color-7: $color-7;
-  --m78-color-8: $color-8;
-  --m78-color-9: $color-9;
-  --m78-color-10: $color-10;
+  --m78-color-1: #{$color-1};
+  --m78-color-2: #{$color-2};
+  --m78-color-3: #{$color-3};
+  --m78-color-4: #{$color-4};
+  --m78-color-5: #{$color-5};
+  --m78-color-6: #{$color-6};
+  --m78-color-7: #{$color-7};
+  --m78-color-8: #{$color-8};
+  --m78-color-9: #{$color-9};
+  --m78-color-10: #{$color-10};
   --m78-color: var(--m78-color-6);
   // 次要主题色
-  --m78-color-sub-1: $color-sub-1;
-  --m78-color-sub-2: $color-sub-2;
-  --m78-color-sub-3: $color-sub-3;
-  --m78-color-sub-4: $color-sub-4;
-  --m78-color-sub-5: $color-sub-5;
-  --m78-color-sub-6: $color-sub-6;
-  --m78-color-sub-7: $color-sub-7;
-  --m78-color-sub-8: $color-sub-8;
-  --m78-color-sub-9: $color-sub-9;
-  --m78-color-sub-10: $color-sub-10;
+  --m78-color-sub-1: #{$color-sub-1};
+  --m78-color-sub-2: #{$color-sub-2};
+  --m78-color-sub-3: #{$color-sub-3};
+  --m78-color-sub-4: #{$color-sub-4};
+  --m78-color-sub-5: #{$color-sub-5};
+  --m78-color-sub-6: #{$color-sub-6};
+  --m78-color-sub-7: #{$color-sub-7};
+  --m78-color-sub-8: #{$color-sub-8};
+  --m78-color-sub-9: #{$color-sub-9};
+  --m78-color-sub-10: #{$color-sub-10};
   --m78-color-sub: var(--m78-color-sub-6);
   // 灰色系
-  --m78-color-title: $b-title; // Title
-  --m78-color-primary: $b-primary; // 主要文本色
-  --m78-color-second: $b-second; // 次要文本色
-  --m78-color-disable: $b-disable; // 禁用
-  --m78-color-border: $b-border; // 边框
-  --m78-color-divider: $b-divider; // 分割线
+  --m78-color-title: #{$b-title}; // Title
+  --m78-color-primary: #{$b-primary}; // 主要文本色
+  --m78-color-second: #{$b-second}; // 次要文本色
+  --m78-color-disable: #{$b-disable}; // 禁用
+  --m78-color-border: #{$b-border}; // 边框
+  --m78-color-divider: #{$b-divider}; // 分割线
   // 遮罩
-  --m78-mask: $w-mask;
+  --m78-mask: #{$w-mask};
 }
 
 //
@@ -55,13 +55,13 @@
 //
 
 :root[data-theme-dark] {
-  --m78-body-bg: $body-bg-b;
-  --m78-component-bg: $component-bg-b;
-  --m78-color-title: $w-title;
-  --m78-color-primary: $w-primary;
-  --m78-color-second: $w-second;
-  --m78-color-disable: $w-disable;
-  --m78-color-border: $w-border;
-  --m78-color-divider: $w-divider;
-  --m78-mask: $b-mask;
+  --m78-body-bg: #{$body-bg-b};
+  --m78-component-bg: #{$component-bg-b};
+  --m78-color-title: #{$w-title};
+  --m78-color-primary: #{$w-primary};
+  --m78-color-second: #{$w-second};
+  --m78-color-disable: #{$w-disable};
+  --m78-color-border: #{$w-border};
+  --m78-color-divider: #{$w-divider};
+  --m78-mask: #{$b-mask};
 }

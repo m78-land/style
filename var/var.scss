@@ -13,10 +13,10 @@ $dpr: 2 !default;
 
 // -------------------- 颜色 ---------------------
 // 功能色&主题色
-$color-info: $blue-6 !default;
-$color-success: $green-6 !default;
-$color-error: $red-6 !default;
-$color-warn: $orange-6 !default;
+$color-info: $blue-5 !default;
+$color-success: $green-5 !default;
+$color-error: $red-5 !default;
+$color-warn: $orange-5 !default;
 
 // 亮色 & 暗色
 $white: $grey-1 !default;
@@ -147,11 +147,11 @@ $border-radius-md: 8px !default;
 $border-radius-lg: 16px !default;
 
 // 阴影
-$shadow-1: rgba(0, 0, 0, 0.12) 0px 1px 2px 0px !default;
-$shadow-1-focus: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px !default;
+$shadow-1: rgba(0, 0, 0, 0.2) 0px 0px 8px 0px !default;
+$shadow-1-focus: rgba(0, 0, 0, 0.3) 0px 0px 8px 0px !default;
 
-$shadow-2: rgba(0, 0, 0, 0.2) 0px 4px 20px 0px !default;
-$shadow-2-focus: rgba(0, 0, 0, 0.3) 0px 4px 20px 0px !default;
+$shadow-2: rgba(0, 0, 0, 0.2) 0px 4px 24px 0px !default;
+$shadow-2-focus: rgba(0, 0, 0, 0.3) 0px 4px 24px 0px !default;
 
 $shadow-3: rgba(0, 0, 0, 0.24) 0px 12px 30px 0px !default;
 $shadow-3-focus: rgba(0, 0, 0, 0.3) 0px 12px 30px 0px !default;
