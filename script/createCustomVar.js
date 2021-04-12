@@ -26,4 +26,7 @@ inquirer
     })
 
     console.log(`--m78-color: ${colors[5]};`)
+    console.log(`--m78-color-opacity-sm: #{rgba(${colors[5]}, 0.2)};`)
+    console.log(`--m78-color-opacity-md: #{rgba(${colors[5]}, 0.5)};`)
+    console.log(`--m78-color-opacity-lg: #{rgba(${colors[5]}, 0.75)};`)
   });

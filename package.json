@@ -1,6 +1,6 @@
 {
   "name": "@m78/style",
-  "version": "1.0.8",
+  "version": "1.0.18",
   "description": "一个样式库，包含css变量、normalize、grid、以及常用的sass混合、原子类等，旨在简化css的书写",
   "main": "./index.scss",
   "authors": {
@@ -23,12 +23,5 @@
   "dependencies": {
     "@ant-design/colors": "^3.2.2"
   },
-  "license": "MIT",
-  "files": [
-    "dist",
-    "base",
-    "script",
-    "var",
-    "main.scss"
-  ]
+  "license": "MIT"
 }
