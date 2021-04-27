@@ -63,6 +63,14 @@
   --m78-color-divider: var(--m78-color-divider-b); // 分割线
   --m78-color-bg: var(--m78-color-bg-b); // 分割线
 
+  --m78-color-title-rv: var(--m78-color-title-w); // Title
+  --m78-color-primary-rv: var(--m78-color-primary-w); // 主要文本色
+  --m78-color-second-rv: var(--m78-color-second-w); // 次要文本色
+  --m78-color-disable-rv: var(--m78-color-disable-w); // 禁用
+  --m78-color-border-rv: var(--m78-color-border-w); // 边框
+  --m78-color-divider-rv: var(--m78-color-divider-w); // 分割线
+  --m78-color-bg-rv: var(--m78-color-bg-w); // 分割线
+
   // 灰
   --m78-gray-1: #{$grey-1};
   --m78-gray-2: #{$grey-2};
@@ -188,7 +196,7 @@
   --m78-gray-13: #{$grey-1};
 
   --m78-body-bg: #18191a; // 单独指定
-  --m78-component-bg: #{--m78-gray-2};
+  --m78-component-bg: var(--m78-gray-2);
 
   --m78-color-title: var(--m78-color-title-w);
   --m78-color-primary: var(--m78-color-primary-w);
@@ -197,6 +205,13 @@
   --m78-color-border: var(--m78-color-border-w);
   --m78-color-divider: var(--m78-color-divider-w);
   --m78-color-bg: var(--m78-color-bg-w);
+  --m78-color-title-rv: var(--m78-color-title-b);
+  --m78-color-primary-rv: var(--m78-color-primary-b);
+  --m78-color-second-rv: var(--m78-color-second-b);
+  --m78-color-disable-rv: var(--m78-color-disable-b);
+  --m78-color-border-rv: var(--m78-color-border-b);
+  --m78-color-divider-rv: var(--m78-color-divider-b);
+  --m78-color-bg-rv: var(--m78-color-bg-b);
   --m78-mask: var(--m78-mask-b);
   --m78-shadow-1: var(--m78-shadow-1-w);
   --m78-shadow-1-focus: var(--m78-shadow-1-w-focus);

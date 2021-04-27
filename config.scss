@@ -73,14 +73,14 @@ $fw-bold: bold !default;
 $line-height: 1.6 !default;
 
 // 字体
-$font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-'Noto Color Emoji', sans-serif !default;
+$font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, Segoe UI, Segoe UI Emoji, Segoe UI Symbol, Apple Color Emoji,
+Noto Color Emoji, sans-serif !default;
 
-$code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
+$code-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace !default;
 
 // 遮罩
-$mask-b: rgba(0, 0, 0, 0.7) !default;
-$mask-w: rgba(255, 255, 255, 0.7) !default;
+$mask-b: rgba(0, 0, 0, 0.8) !default;
+$mask-w: rgba(255, 255, 255, 0.8) !default;
 
 // 阴影
 $shadow-1-b: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px !default;

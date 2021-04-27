@@ -272,15 +272,55 @@
   color: var(--m78-color-disable) !important;
 }
 
-.color-primary {
+.color-border {
+  color: var(--m78-color-border) !important;
+}
+
+.color-divider {
+  color: var(--m78-color-divider) !important;
+}
+
+.color-bg {
+  color: var(--m78-color-bg) !important;
+}
+
+.color-title-w {
+  color: var(--m78-color-title-w) !important;
+}
+
+.color-primary-w {
+  color: var(--m78-color-primary-w) !important;
+}
+
+.color-second-w {
+  color: var(--m78-color-second-w) !important;
+}
+
+.color-disabled-w {
+  color: var(--m78-color-disable-w) !important;
+}
+
+.color-border-w {
+  color: var(--m78-color-border-w) !important;
+}
+
+.color-divider-w {
+  color: var(--m78-color-divider-w) !important;
+}
+
+.color-bg {
+  color: var(--m78-color-bg) !important;
+}
+
+.color {
   color: var(--m78-color-6) !important;
 }
 
-.color-primary-l {
+.color-l {
   color: var(--m78-color-4) !important;
 }
 
-.color-primary-d {
+.color-d {
   color: var(--m78-color-8) !important;
 }
 
@@ -338,11 +378,55 @@
 }
 
 .fs-md {
-  font-size: var(--m--m78-fs-md) !important;
+  font-size: var(--m78-fs-md) !important;
 }
 
 .fs-lg {
   font-size: var(--m78-fs-lg) !important;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-40 {
+  font-size: 40px;
 }
 
 // 内外边距类 //
@@ -795,6 +879,22 @@
 // --------------------- 边框 --------------------- //
 .border {
   border: 1px solid var(--m78-color-border);
+}
+
+.border-t {
+  border-top: 1px solid var(--m78-color-border);
+}
+
+.border-r {
+  border-right: 1px solid var(--m78-color-border);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--m78-color-border);
+}
+
+.border-l {
+  border-left: 1px solid var(--m78-color-border);
 }
 
 // 1px 线 //
