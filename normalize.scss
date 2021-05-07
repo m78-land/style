@@ -73,6 +73,7 @@ body {
   -ms-text-size-adjust: 100%; // 4
   -ms-overflow-style: scrollbar; // 5
   -webkit-tap-highlight-color: transparent; // 6
+  -webkit-font-smoothing: antialiased;
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
