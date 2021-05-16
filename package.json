@@ -1,15 +1,15 @@
 {
   "name": "@m78/style",
-  "version": "1.0.23",
+  "version": "1.0.26",
   "description": "一个样式库，包含css变量、normalize、grid、以及常用的sass混合、原子类等，旨在简化css的书写",
-  "main": "./index.scss",
+  "main": "./index.js",
   "authors": {
     "name": "lixianjie",
     "email": "1073830130@qq.com"
   },
   "scripts": {
     "example": "parcel demo/example.html",
-    "build": "sass ./main.scss ./dist/index.css",
+    "build": "sass ./index.scss ./dist/index.css",
     "publish": "npm publish --access public",
     "gcolors-var": "node ./script/generateColors.js"
   },
