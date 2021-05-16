@@ -12,6 +12,10 @@
   flex-direction: row;
 }
 
+.m78-flex-wrap {
+  flex-wrap: wrap;
+}
+
 // 对齐 ***/
 .m78-main-center {
   justify-content: center;
@@ -69,7 +73,6 @@
   align-self: flex-end;
 }
 
-
 // 值类 ***/
 
 .m78-order-minus1 {
@@ -94,6 +97,10 @@
 
 .m78-order-5 {
   order: 5
+}
+
+.m78-flex-auto {
+  flex: 0 0 auto;
 }
 
 .m78-flex-1 {
