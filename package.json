@@ -1,8 +1,8 @@
 {
   "name": "@m78/style",
-  "version": "1.0.27",
+  "version": "1.0.29",
   "description": "一个样式库，包含css变量、normalize、grid、以及常用的sass混合、原子类等，旨在简化css的书写",
-  "main": "./index.js",
+  "main": "./index.scss",
   "authors": {
     "name": "lixianjie",
     "email": "1073830130@qq.com"
