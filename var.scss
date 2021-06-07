@@ -37,6 +37,9 @@
   --m78-color-sub-9: #{$color-sub-9};
   --m78-color-sub-10: #{$color-sub-10};
   --m78-color-sub: var(--m78-color-sub-6);
+  --m78-color-sub-opacity-sm: #{rgba($color-sub-6, 0.2)};
+  --m78-color-sub-opacity-md: #{rgba($color-sub-6, 0.5)};
+  --m78-color-sub-opacity-lg: #{rgba($color-sub-6, 0.75)};
 
   // 灰色系
   --m78-color-title-b: #{$color-title-b}; // Title
