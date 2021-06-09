@@ -897,6 +897,20 @@
   }
 }
 
+@keyframes #{$prefix}-active-effect {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+
+  20% {
+    box-shadow: 0 0 0 6px rgba(232, 26, 26, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 7px rgba(232, 26, 26, 0);
+  }
+}
+
 // --------------------- 遮罩 --------------------- //
 .m78-mask {
   position: fixed;
@@ -1011,6 +1025,15 @@
 .effect-font-color {
   @include effect-font-color;
 }
+
+.active-effect {
+  animation: #{$prefix}-active-effect ease-out 1.6s;
+}
+
+.active-effect-infinite {
+  animation: #{$prefix}-active-effect ease-out 1.6s infinite;
+}
+
 
 .cus-p {
   cursor: pointer;
