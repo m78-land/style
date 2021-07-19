@@ -903,11 +903,11 @@
   }
 
   20% {
-    box-shadow: 0 0 0 6px rgba(232, 26, 26, 0.2);
+    box-shadow: 0 0 0 6px var(--m78-color-opacity-sm);
   }
 
   100% {
-    box-shadow: 0 0 0 7px rgba(232, 26, 26, 0);
+    box-shadow: 0 0 0 7px transparent;
   }
 }
 
@@ -1027,11 +1027,11 @@
 }
 
 .active-effect {
-  animation: #{$prefix}-active-effect ease-out 1.6s;
+  animation: #{$prefix}-active-effect ease-out 1.2s;
 }
 
 .active-effect-infinite {
-  animation: #{$prefix}-active-effect ease-out 1.6s infinite;
+  animation: #{$prefix}-active-effect ease-out 1.2s infinite;
 }
 
 
