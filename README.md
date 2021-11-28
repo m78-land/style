@@ -1,9 +1,15 @@
 # @m78/style
-> 一个样式库，包含css变量、normalize、grid、以及常用的sass混合、原子类等，旨在简化css的书写
+一个样式库，包含预置的大量css变量、原子类、normalize、grid、以及常用的sass混合等，旨在简化css的书写
 
-💥 需要使用支持sass/scss的打包器加载此项目
-💥 为了工具类名称简短，很多原子类都直接使用了无前缀的语义化名称，本库假设你会主动避免业务类名和本库中原子类名的冲突
-💥 此项目大量使用`css properties`, 用户可根据兼容需求使用[postcss-custom-properties](https://github.com/postcss/postcss-custom-properties)进行回退处理
+
+
+* 需要使用支持sass/scss的打包器加载此项目
+* 此项目大量使用`css properties`, 用户可根据兼容需求使用[postcss-custom-properties](https://github.com/postcss/postcss-custom-properties)或类似工具进行回退处理
+* 本库中的所有基础样式、原子类都是无污染的, 仅作用在`.m78`限定类名下或其本身, 可以使用到任意现有项目中而不用担心造成破坏
+    * 对于新项目, 将 `.m78 ` 直接添加到html元素上, 使所有样式都能全局生效
+    * 对于不想全局作用的项目, 在需要使用的节点最外层添加`.m78`类名
+
+
 
 ## 安装
 

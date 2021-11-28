@@ -1,6 +1,14 @@
-@import "./sass-vars";
+@import "sass-vars";
 
 $col-one-width: 100% / $grid-num;
+
+// 断点
+$xs: 0px !default; //	<576
+$sm: 576px !default; //	≥576
+$md: 768px !default; //	≥768
+$lg: 992px !default; //	≥992
+$xl: 1200px !default; //	≥1200
+$xxl: 1600px !default; //	≥1600
 
 // 容器*/
 .#{$prefix}-row {
