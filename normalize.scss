@@ -63,9 +63,11 @@ input.m78::-ms-reveal
 // 6. Change the default tap highlight to be completely transparent in iOS.
 
 .m78,
-*,
-*::before,
-*::after {
+.m78 *,
+.m78::before,
+.m78::after,
+.m78 *::before,
+.m78 *::after {
   box-sizing: border-box; // 1
 }
 
@@ -448,13 +450,6 @@ textarea.m78,
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
-}
-
-button.m78,
-input.m78,
-.m78 button,
-.m78 input {
-  overflow: visible; // Show the overflow in Edge
 }
 
 button.m78,

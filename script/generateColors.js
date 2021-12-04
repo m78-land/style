@@ -6,7 +6,7 @@ let tpl = '';
 const newLine = '\r\n';
 
 // gray系列色板有问题 先手动加上
-presetPalettes.grey = [
+presetPalettes.gray = [
   '#ffffff',
   '#fafafa',
   '#f5f5f5',
