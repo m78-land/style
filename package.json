@@ -1,6 +1,6 @@
 {
   "name": "@m78/style",
-  "version": "2.0.2",
+  "version": "2.0.5",
   "description": "一个样式库，包含预置的大量css变量、原子类、normalize、grid、以及常用的sass混合等，旨在简化css的书写",
   "main": "./index.scss",
   "authors": {

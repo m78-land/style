@@ -1,3 +1,5 @@
+// 部分基础代码来自normalize.css
+
 // Reboot
 //
 // Normalization of HTML elements, manually forked from Normalize.css to remove
@@ -434,24 +436,6 @@ th.m78,
 //
 // Forms
 //
-
-input.m78,
-button.m78,
-select.m78,
-optgroup.m78,
-textarea.m78,
-.m78 input,
-.m78 button,
-.m78 select,
-.m78 optgroup,
-.m78 textarea {
-  margin: 0; // remove the margin in Firefox and Safari
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
-}
-
 button.m78,
 select.m78,
 .m78 button,

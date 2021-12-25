@@ -24,7 +24,7 @@
   --m78-color-9: var(--m78-cyan-9);
   --m78-color-10: var(--m78-cyan-10);
   --m78-color: var(--m78-color-6);
-  --m78-color-opacity-sm: #{rgba(var(--m78-color-6), 0.2)};
+  --m78-color-opacity-sm: #{rgba(#13c2c2, 0.2)};
   --m78-color-opacity-md: #{rgba(#13c2c2, 0.5)};
   --m78-color-opacity-lg: #{rgba(#13c2c2, 0.75)};
 
@@ -67,7 +67,7 @@
   --m78-color-disable: var(--m78-color-disable-b); // 禁用
   --m78-color-border: var(--m78-color-border-b); // 边框
   --m78-color-divider: var(--m78-color-divider-b); // 分割线
-  --m78-color-bg: var(--m78-color-bg-b); // 分割线
+  --m78-color-bg: var(--m78-color-bg-b); // 背景
 
   // 与当前主题相斥的前景色
   --m78-color-title-rv: var(--m78-color-title-w); // Title
@@ -76,7 +76,7 @@
   --m78-color-disable-rv: var(--m78-color-disable-w); // 禁用
   --m78-color-border-rv: var(--m78-color-border-w); // 边框
   --m78-color-divider-rv: var(--m78-color-divider-w); // 分割线
-  --m78-color-bg-rv: var(--m78-color-bg-w); // 分割线
+  --m78-color-bg-rv: var(--m78-color-bg-w); // 背景
 
   // 功能色
   --m78-color-info: var(--m78-blue-5);
