@@ -439,20 +439,7 @@ select.m78,
 .m78 button,
 .m78 select {
   text-transform: none; // remove the inheritance of text transform in Firefox
-}
-
-// 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
-//    controls in Android 4.
-// 2. Correct the inability to style clickable types in iOS and Safari.
-button.m78,
-.m78[type="button"], /* 1 */
-.m78[type="reset"],
-.m78[type="submit"],
-.m78 button,
-.m78 [type="button"], /* 1 */
-.m78 [type="reset"],
-.m78 [type="submit"] {
-  -webkit-appearance: button; // 2
+  font-family: inherit;
 }
 
 // remove inner border and padding from Firefox, but don't restore the outline like Normalize.
